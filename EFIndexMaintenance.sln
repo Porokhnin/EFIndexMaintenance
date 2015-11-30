@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFIndexMaintenance", "EFIndexMaintenance\EFIndexMaintenance.csproj", "{60C10A90-D4BB-4515-82A9-F981BA3820E3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{129E13DA-F98D-4FC9-A176-D4BAE553E9BF}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sample", "Sample", "{B53DE6AF-B2D6-4855-9271-654F28DEE64B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFIndexMaintenance.Database", "EFIndexMaintenance.Sample\Database\EFIndexMaintenance.Database.csproj", "{7668AF08-9FA2-430E-AAE7-1A6893DDDEBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFIndexMaintenance.EFIndexUpdater", "EFIndexMaintenance.Sample\IndexUpdater\EFIndexMaintenance.EFIndexUpdater.csproj", "{4F512D38-AF16-46D0-8C75-209FFDD5B2ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60C10A90-D4BB-4515-82A9-F981BA3820E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60C10A90-D4BB-4515-82A9-F981BA3820E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60C10A90-D4BB-4515-82A9-F981BA3820E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60C10A90-D4BB-4515-82A9-F981BA3820E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7668AF08-9FA2-430E-AAE7-1A6893DDDEBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7668AF08-9FA2-430E-AAE7-1A6893DDDEBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7668AF08-9FA2-430E-AAE7-1A6893DDDEBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7668AF08-9FA2-430E-AAE7-1A6893DDDEBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F512D38-AF16-46D0-8C75-209FFDD5B2ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F512D38-AF16-46D0-8C75-209FFDD5B2ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F512D38-AF16-46D0-8C75-209FFDD5B2ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F512D38-AF16-46D0-8C75-209FFDD5B2ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7668AF08-9FA2-430E-AAE7-1A6893DDDEBA} = {B53DE6AF-B2D6-4855-9271-654F28DEE64B}
+		{4F512D38-AF16-46D0-8C75-209FFDD5B2ED} = {B53DE6AF-B2D6-4855-9271-654F28DEE64B}
+	EndGlobalSection
+EndGlobal
