@@ -1,6 +1,6 @@
 using System.Data.Entity.Migrations;
 
-namespace IndexSuppoterSample.Database.Migrations
+namespace EFIndexMaintenance.Database.Migrations
 {
     public partial class Initial : DbMigration
     {

@@ -1,11 +1,10 @@
 using System.Data.Entity.Migrations;
-using EFIndexMaintenance.Database;
 
-namespace IndexSuppoterSample.Database.Migrations
+namespace EFIndexMaintenance.Database.Migrations
 {
-    public sealed class Configuration : DbMigrationsConfiguration<BloggingContext>
+    public class MigrationsConfiguration : DbMigrationsConfiguration<BloggingContext>
     {
-        public Configuration()
+        public MigrationsConfiguration()
         {
             AutomaticMigrationsEnabled = false;
         }

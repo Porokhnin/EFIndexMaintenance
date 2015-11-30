@@ -63,7 +63,7 @@
     <Compile Include="Migrations\201511301054363_AddUrl.Designer.cs">
       <DependentUpon>201511301054363_AddUrl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Migrations\MigrationsConfiguration.cs" />
     <Compile Include="BloggingContext.cs" />
     <Compile Include="Post.cs" />
     <Compile Include="Blog.cs" />
@@ -83,6 +83,12 @@
     <EmbeddedResource Include="Migrations\201511301102586_AddUser.resx">
       <DependentUpon>201511301102586_AddUser.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\EFIndexMaintenance\EFIndexMaintenance.csproj">
+      <Project>{60c10a90-d4bb-4515-82a9-f981ba3820e3}</Project>
+      <Name>EFIndexMaintenance</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />

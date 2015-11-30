@@ -4,7 +4,7 @@ using System.CodeDom.Compiler;
 using System.Data.Entity.Migrations.Infrastructure;
 using System.Resources;
 
-namespace IndexSuppoterSample.Database.Migrations
+namespace EFIndexMaintenance.Database.Migrations
 {
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
     public sealed partial class AddUser : IMigrationMetadata

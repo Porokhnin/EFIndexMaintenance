@@ -3,6 +3,7 @@ using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Reflection;
 using EFIndexMaintenance.Database;
+using EFIndexMaintenance.Database.Migrations;
 using NLog;
 
 namespace EFIndexMaintenance.EFIndexUpdater
@@ -30,7 +31,7 @@ namespace EFIndexMaintenance.EFIndexUpdater
 
                     indexUpdater.UpdateIndexes(context);
                 }
-                var dbMigrator = new DbMigrator(new IndexSuppoterSample.Database.Migrations.Configuration());
+                var dbMigrator = new DbMigrator(new MigrationsConfiguration());
                 var databaseMigrations = dbMigrator.GetDatabaseMigrations().Reverse().ToList();
                 if (databaseMigrations.Any())
                 {

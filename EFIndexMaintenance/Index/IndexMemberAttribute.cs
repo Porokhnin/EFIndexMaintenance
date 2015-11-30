@@ -30,14 +30,14 @@ namespace EFIndexMaintenance.Index
         /// Создать атрибут
         /// </summary>
         /// <param name="indexName">Имя индекса</param>
-        /// <param name="memberOrde">Порядковый номер столбца в индексе</param>
-        public IndexMemberAttribute(string indexName, int memberOrde)
+        /// <param name="memberOrder">Порядковый номер столбца в индексе</param>
+        public IndexMemberAttribute(string indexName, int memberOrder)
         {
             if (string.IsNullOrEmpty(indexName))
                 throw new ArgumentException("Имя индекса не может быть Null Or Empty");
 
             IndexName = indexName;
-            MemberOrder = memberOrde;
+            MemberOrder = memberOrder;
             SortDirection = SortDirection.Asc;
         }
     }
